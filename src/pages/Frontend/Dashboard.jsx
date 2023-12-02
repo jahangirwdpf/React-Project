@@ -3,19 +3,22 @@ import Card from './card'
 import Logo from '../../assets/img/Logo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHouse, faSearch } from '@fortawesome/free-solid-svg-icons'
-import Button from './button'
+import Button from '../../components/button'
 import Footer from '../../components/footer'
+import Header from '../../components/head-nav'
 
-function Dashboard() {
+const Dashboard = () => {
   return (
-    <><div className='container'>
-      <div class="row">
-        <Card className="col-md-4" img={Logo} title="hi" sub="Good" />
-        <Card className="col-md-4" img={Logo} title="hi" sub="Good" />
-        <Card className="col-md-4" img={Logo} title="hi" sub="Good" />
-        <Button btntext="Submit" url="card" />
-      </div>
-    </div>
+    <>
+      <Header />
+        <div className='container d-flex'>
+          <div class="col-md-3">
+            <Card className="col-md-4" img={Logo} title="hi" sub="Good" />
+            <Card className="col-md-4" img={Logo} title="hi" sub="Good" />
+            <Card className="col-md-4" img={Logo} title="hi" sub="Good" />
+            <Button btntext="Submit" url="card" />
+          </div>
+        </div>
     </>
   )
 }

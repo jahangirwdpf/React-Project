@@ -4,7 +4,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import Home from "../pages/Frontend/Home"
 import Footer from "./footer"
 
-    function header(){
+    function Header(){
 
         return(
             <>
@@ -27,10 +27,8 @@ import Footer from "./footer"
                     </div>
                 </div>
             </nav> 
-
-            <Home />
         </>
         )
     }
     
-    export default header
+    export default Header

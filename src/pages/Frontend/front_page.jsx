@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import Dropdown from 'react-bootstrap/Dropdown';
-import Form from '../Frontend/form'
+import Login from './login_form'
 
 
     function front_page(){
@@ -32,48 +32,12 @@ import Form from '../Frontend/form'
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item href="Form">Admin</Dropdown.Item>
+                            <Dropdown.Item href="/Login">Admin</Dropdown.Item>
                             <Dropdown.Item href="#/action-2">Members</Dropdown.Item>
                             <Dropdown.Item href="#/action-3">New Member</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </div>
-            {/* <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#003D59', color: 'light'}}>
-                <div className="container-fluidcontainer-fluid">
-                    <a className="navbar-brand" href="#">Bachelor Point</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="#">About US</a>
-                        </li>
-                        <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Login
-                        </a>
-                        <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                    </div>
-                </div>
-            </nav> */}
             </div>
 {/*--------------------  -------------------------------------------------------------*/}
         <div id="carouselExampleRide pb-2" class="carousel slide" data-bs-ride="true">
@@ -106,7 +70,7 @@ import Form from '../Frontend/form'
                 <br />
                 <br />
                 <br />
-                <h1 className='text-center bg-light text-success'>aSfskvsvsghiv</h1>
+                <h1 className='text-center bg-light text-success'></h1>
                 <Link><img src={pic3} class="d-block w-100" alt="..." /></Link>
             </div>
             <div className='container-fluid'>
